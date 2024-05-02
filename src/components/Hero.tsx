@@ -1,7 +1,7 @@
 import React from "react";
 
 const Hero = () => {
-  const videoUrl = "/videos/main-background-video.mp4";
+  const videoUrl = "https://yiegin.s3.eu-north-1.amazonaws.com/main-background-video.mp4";
 
   return (
     <div className="h-screen relative overflow-hidden bg-gradient-to-t from-black from-0% via-[#3D8BFF] via-47% to-[#5d0285] to-99%">
@@ -16,9 +16,9 @@ const Hero = () => {
         <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="inset-0 absolute flex flex-col px-10 md:px-20 2xl:px-60 justify-center h-full mt-[10%]">
+      <div className="inset-0 absolute flex flex-col px-10 md:px-20 2xl:px-60 justify-center h-full mt-[9%]">
         <h1 className="uppercase font-monument text-3xl md:text-5xl xxl:text-[68px] xxl:leading-[4.7rem] text-white">
-          The world's first <br /> platform for tokenizing <br /> ai blockchain
+          The world&apos;s first <br /> platform for tokenizing <br /> ai blockchain
           projects
         </h1>
         <div className="md:w-max font-satoshi-Bold text-base md:text-[22px] mt-10">

@@ -14,8 +14,8 @@ export const navItems = [
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center sm:px-[50px] px-8 py-[30px] absolute w-full z-30">
-      <Image className="h-max" alt="Logo" src={Logo} width={100} height={39} />
+    <div className="flex justify-between items-center sm:px-[45px] px-8 py-[30px] absolute w-full z-30">
+      <Image className="h-max" alt="Logo" src={Logo} width={140} height={39} />
       <div className="hidden lg:flex justify-between font-satoshi-Bold">
         <div className="flex items-center gap-x-10">
           {navItems.map((item) => (
@@ -29,14 +29,14 @@ const Header = () => {
               >
                 {item.title}
                 {item.isNew && (
-                  <span className="bg-black text-[#AB23FF] px-1 py-[2px] uppercase ml-1 rounded-full text-[10px] relative bottom-2">
+                  <span className="bg-black text-[#AB23FF] px-1 py-[2px] uppercase ml-1 rounded-full text-[10px] relative bottom-[6px]">
                     Soon
                   </span>
                 )}
               </p>
             </Link>
           ))}
-          <Button className="w-32 h-11">
+          <Button className="w-[132px] h-11 ml-5">
             <span>Connect</span>
             <span>Connect</span>
           </Button>
