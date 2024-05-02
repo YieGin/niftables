@@ -5,12 +5,14 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 import { navItems } from "./Header";
+import { Link as LinkScroll } from "react-scroll";
 
 const MobileNav = () => {
   const [menu, setMenu] = useState(false);
 
   const toggleMenu = () => {
     setMenu(!menu);
+    document.body.style.overflow = !menu ? 'hidden' : 'auto';
   };
 
   return (
@@ -36,23 +38,55 @@ const MobileNav = () => {
           </button>
         </div>
         <div className="bg-[#13171D] w-full h-[1px] mt-10 mb-[15px]" />
-        {navItems.map((item) => (
-          <Link key={item.title} href={item.href} className="text-[16px]">
-            <div
-              className={`${
-                item.isNew ? "" : "hover:text-[#3D8BFF] delay-75 transition-all"
-              }`}
-            >
-              {item.title}
-              {item.isNew && (
-                <span className="bg-black text-[#AB23FF] px-1 py-[2px] uppercase ml-1 rounded-full text-[10px] relative bottom-2">
-                  Soon
-                </span>
-              )}
-              <div className="bg-[#13171D] w-full h-[1px] my-[15px]" />
-            </div>
-          </Link>
-        ))}
+        {navItems.map((item) => {
+          if (item.title === "Creon Pass") {
+            return (
+              <LinkScroll
+                key={item.title}
+                to={item.href}
+                smooth={true}
+                duration={500}
+                className="text-lg cursor-pointer"
+              >
+                <p
+                  className={`${
+                    item.isNew
+                      ? ""
+                      : "hover:text-[#3D8BFF] delay-75 transition-all"
+                  }`}
+                >
+                  {item.title}
+                  {item.isNew && (
+                    <span className="bg-black text-[#AB23FF] px-1 py-[2px] uppercase ml-1 rounded-full text-[10px] relative bottom-[6px]">
+                      Soon
+                    </span>
+                  )}
+                </p>
+                <div className="bg-[#13171D] w-full h-[1px] my-[15px]" />
+              </LinkScroll>
+            );
+          } else {
+            return (
+              <Link key={item.title} href={item.href} className="text-lg">
+                <p
+                  className={`${
+                    item.isNew
+                      ? ""
+                      : "hover:text-[#3D8BFF] delay-75 transition-all"
+                  }`}
+                >
+                  {item.title}
+                  {item.isNew && (
+                    <span className="bg-black text-[#AB23FF] px-1 py-[2px] uppercase ml-1 rounded-full text-[10px] relative bottom-2">
+                      Soon
+                    </span>
+                  )}
+                </p>
+                <div className="bg-[#13171D] w-full h-[1px] my-[15px]" />
+              </Link>
+            );
+          }
+        })}
       </div>
     </div>
   );

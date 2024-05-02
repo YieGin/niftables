@@ -20,7 +20,7 @@ const Benefits = () => {
           Creon Pass <br className="hidden lg:block" /> NFT
         </h1>
         <div className="bg-[#13171D] w-full h-[1px] my-[30px]" />
-        <p className="bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] inline-block text-transparent bg-clip-text lg:w-[80%] text-[22px]">
+        <p className="bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] inline-block text-transparent bg-clip-text lg:w-[80%] md:text-[22px]">
           The Creon NFT pass unlocks access to AI projects, the Creon launchpad,
           and a ticket to generate passive income through AI-driven tools
         </p>
