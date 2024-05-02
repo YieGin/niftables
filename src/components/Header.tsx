@@ -14,7 +14,7 @@ export const navItems = [
 
 const Header = () => {
   return (
-    <div className="flex justify-between sm:px-[50px] px-8 py-[30px] ">
+    <div className="flex justify-between items-center sm:px-[50px] px-8 py-[30px] absolute w-full z-30">
       <Image className="h-max" alt="Logo" src={Logo} width={100} height={39} />
       <div className="hidden lg:flex justify-between font-satoshi-Bold">
         <div className="flex items-center gap-x-10">

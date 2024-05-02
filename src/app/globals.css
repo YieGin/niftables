@@ -35,10 +35,3 @@ body {
 .transition-max-height {
   transition: max-height 500ms ease-in-out;
 }
-
-h1 {
-  font-size: 68px;
-}
-h2 {
-  font-size: 38px;
-}

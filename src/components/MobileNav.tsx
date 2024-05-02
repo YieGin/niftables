@@ -21,7 +21,7 @@ const MobileNav = () => {
       <div
         className={`fixed top-0 right-0 sm:w-1/2 w-3/5 h-screen transition-transform duration-300 ${
           menu ? "translate-x-0" : "translate-x-full"
-        } bg-blue-950 pl-5 py-5 z-20`}
+        } bg-black pl-5 py-5 z-20`}
       >
         <div className="flex justify-between gap-2 sm:gap-5 sm:pr-5 pr-3">
           <Button className="sm:w-32 sm:h-11 h-9 w-28 sm:text-[18px] text-[13px]">
