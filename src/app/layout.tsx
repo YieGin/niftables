@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import {
+  monument,
+  satoshiBold,
+  satoshiMedium,
+  satoshiRegular,
+} from "@/utils/globalFonts";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${monument.variable} ${satoshiBold.variable} ${satoshiMedium.variable} ${satoshiRegular.variable}`}
+      >
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
