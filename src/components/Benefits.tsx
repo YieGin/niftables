@@ -14,17 +14,17 @@ const Benefits = () => {
   const videoUrl = "https://yiegin.s3.eu-north-1.amazonaws.com/nft-video.mp4";
 
   return (
-    <div className="flex flex-col lg:flex-row justify-between w-full gap-10 px-10 md:px-20 2xl:px-60 font-satoshi-Bold">
-      <div className="lg:w-1/2 md:w-2/3 w-full">
-        <h1 className="xl:text-[68px] lg:text-4xl text-5xl font-monument uppercase xl:leading-[4.5rem]">
-          Creon Pass NFT
+    <div className="flex flex-col lg:flex-row justify-between w-full gap-10 font-satoshi-Bold">
+      <div id="creon-pass" className="lg:w-1/2 md:w-2/3 w-full mt-20">
+        <h1 className="uppercase font-monument text-2xl sm:text-3xl md:text-4xl md:leading-[4rem] xxl:text-[68px] xxl:leading-[4.7rem] text-white">
+          Creon Pass <br /> NFT
         </h1>
         <div className="bg-[#13171D] w-full h-[1px] my-[30px]" />
-        <p className="bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] inline-block text-transparent bg-clip-text lg:w-2/3">
+        <p className="bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] inline-block text-transparent bg-clip-text lg:w-[80%] text-[22px]">
           The Creon NFT pass unlocks access to AI projects, the Creon launchpad,
           and a ticket to generate passive income through AI-driven tools
         </p>
-        <div className="space-y-5 mt-10">
+        <div className="space-y-5 mt-10 font-satoshi-Regular">
           {benefits.map((benefit, index) => (
             <div
               key={index}
@@ -41,11 +41,11 @@ const Benefits = () => {
           </Button>
         </div>
       </div>
-      <div className="md:w-2/3 w-full relative md:right-0 h-full">
+      <div className="md:w-2/3 lg:w-1/2 relative md:right-0 h-full">
         <Image
           src={DarkShape}
           alt="Video Frame"
-          className="absolute top-0 left-0 w-full h-full z-10"
+          className="absolute top-0 left-0 w-max h-full z-10"
         />
         <video
           autoPlay
