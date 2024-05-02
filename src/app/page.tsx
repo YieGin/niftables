@@ -1,11 +1,12 @@
 import React from "react";
 import Hero from "@/components/Hero";
+import Benefits from "@/components/Benefits";
 
 const Home = () => {
   return (
-    <div>
+    <div className="mb-20">
       <Hero />
-      <p className="bg-white">dqsdsq</p>
+      <Benefits />
     </div>
   );
 };

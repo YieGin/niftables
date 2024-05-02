@@ -36,7 +36,7 @@ const Header = () => {
               </p>
             </Link>
           ))}
-          <Button className="w-[132px] h-11 ml-5">
+          <Button className="w-[132px] h-11 ml-5 hover:border-none">
             <span>Connect</span>
             <span>Connect</span>
           </Button>
