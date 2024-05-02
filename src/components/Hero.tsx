@@ -17,7 +17,7 @@ const Hero = () => {
         Your browser does not support the video tag.
       </video>
       <div className="inset-0 absolute flex flex-col px-10 md:px-20 2xl:px-60 justify-center h-full mt-[9%]">
-        <h1 className="uppercase font-monument text-3xl md:text-5xl xxl:text-[68px] xxl:leading-[4.7rem] text-white">
+        <h1 className="uppercase font-monument text-2xl sm:text-3xl md:text-4xl md:leading-[4rem] xxl:text-[68px] xxl:leading-[4.7rem] text-white">
           The world&apos;s first <br /> platform for tokenizing <br /> ai blockchain
           projects
         </h1>

@@ -15,7 +15,7 @@ const MobileNav = () => {
 
   return (
     <div className="lg:hidden overflow-hidden font-satoshi-Bold">
-      <button onClick={toggleMenu} className="z-10">
+      <button onClick={toggleMenu} className="z-10" aria-label="Open menu">
         <RiMenu2Fill size={30} />
       </button>
       <div
@@ -30,6 +30,7 @@ const MobileNav = () => {
           <button
             onClick={toggleMenu}
             className="bg-[#3D8BFF] rounded-md flex items-center justify-center px-2 sm:px-2"
+            aria-label="Close menu"
           >
             <IoMdClose className="text-[30px]" />
           </button>
