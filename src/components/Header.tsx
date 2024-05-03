@@ -9,9 +9,9 @@ import Link from "next/link";
 
 export const navItems = [
   { title: "Creon Pass", href: "creon-pass", isNew: false },
-  { title: "Token", href: "/token", isNew: true },
-  { title: "AI Revenue", href: "/ai-revenue", isNew: true },
-  { title: "AI Launchpad", href: "/ai-launchpad", isNew: true },
+  { title: "Token", href: "/", isNew: true },
+  { title: "AI Revenue", href: "/", isNew: true },
+  { title: "AI Launchpad", href: "/", isNew: true },
 ];
 
 const Header = () => {
