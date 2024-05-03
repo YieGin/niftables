@@ -20,12 +20,19 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-custom": "linear-gradient(174.64deg, #3D6FFF 4.29%, #9123FF 95.05%)", // Custom gradient from Figma
       },
       fontFamily: {
         'satoshi-Bold': ['var(--font-satoshi-Bold)'],
         'satoshi-Regular': ['var(--font-satoshi-Regular)'],
         'satoshi-Medium': ['var(--font-satoshi-Medium)'],
         'monument': ['var(--font-monument)'],
+      },
+      mixBlendMode: { // Adding mix blend modes
+        overlay: 'overlay',
+      },
+      rotate: { // Extend rotation utilities if needed
+        '180': '180deg',
       }
     },
   },

@@ -9,7 +9,7 @@ const Launchpad = () => {
       {CoreList.map((item, index) => (
         <div
           key={index}
-          className="group rounded-lg py-[30px] h-full relative bg-[#13171D] bg-opacity-60 flex flex-col"
+          className="group rounded-lg py-[30px] h-full relative bg-[#13171D] bg-opacity-60"
         >
           <div className="xl:px-[30px] px-5 mb-5 xl:mb-0 lg:h-[100px] xl:h-[180px] xxl:h-[160px]">
             <div className="absolute -top-3 right-7 bg-white rounded-full px-[6px] py-[3px]">

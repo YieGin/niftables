@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,15 +16,14 @@
   }
 }
 
-
 html {
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
 }
 ::-webkit-scrollbar-corner {
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -35,12 +33,11 @@ html {
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
   border: 0;
-  background-color: #AB23FF;
+  background-color: #ab23ff;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #AB23FF;
+  background-color: #ab23ff;
 }
- 
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -59,12 +56,4 @@ body {
 }
 .transition-max-height {
   transition: max-height 500ms ease-in-out;
-}
-
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start; /* Adjust this as needed */
 }

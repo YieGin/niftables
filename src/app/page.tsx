@@ -4,6 +4,7 @@ import Benefits from "@/components/Benefits";
 import Synergy from "@/components/Synergy";
 import Vision from "@/components/Vision";
 import Launchpad from "@/components/Launchpad";
+import Innovation from "@/components/Innovation";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <Synergy />
         <Vision />
         <Launchpad />
+        <Innovation />
       </div>
     </div>
   );
