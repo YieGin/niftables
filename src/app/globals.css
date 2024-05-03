@@ -60,3 +60,11 @@ body {
 .transition-max-height {
   transition: max-height 500ms ease-in-out;
 }
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start; /* Adjust this as needed */
+}

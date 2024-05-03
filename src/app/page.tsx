@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Benefits from "@/components/Benefits";
 import Synergy from "@/components/Synergy";
 import Vision from "@/components/Vision";
+import Launchpad from "@/components/Launchpad";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Benefits />
         <Synergy />
         <Vision />
+        <Launchpad />
       </div>
     </div>
   );

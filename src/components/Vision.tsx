@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { VisionList } from "@/lib/constant";
-import { ImageLog } from "../../public";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { VisionImage } from "../../public";
 
 const Vision = () => {
   const [activeIndices, setActiveIndices] = useState<number[]>([0]);
@@ -39,9 +39,9 @@ const Vision = () => {
           </span>
         </h2>
         <Image
-          src={ImageLog}
-          className="object-cover lg:w-[45%] lg:absolute mt-10 lg:ml-20"
-          alt="Vision logo"
+          src={VisionImage}
+          className="object-cover mt-10 lg:ml-20"
+          alt="Vision Image"
         />
       </div>
       <div className="lg:w-[40%] flex flex-col z-10 space-y-5">
