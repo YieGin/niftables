@@ -5,6 +5,7 @@ import React from "react";
 const Launchpad = () => {
   return (
     <div className="grid lg:grid-cols-3 gap-10 font-satoshi-Bold">
+      <h1 className="sr-only">Main Title of the Page</h1>{" "}
       {CoreList.map((item, index) => (
         <div
           key={index}
@@ -14,10 +15,10 @@ const Launchpad = () => {
             <div className="absolute -top-3 right-7 bg-white rounded-full px-[6px] py-[3px]">
               <p className="text-[12px] text-black uppercase">Coming soon</p>
             </div>
-            <h1 className="2xl:text-[38px] xl:text-[28px] text-[20px] font-monument uppercase mb-3">
+            <h2 className="2xl:text-[38px] xl:text-[28px] text-[20px] font-monument uppercase mb-3">
               {item.title}
-            </h1>
-            <h3 className="xl:text-[22px] text-[18px] font-satoshi-Bold bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] inline-block text-transparent bg-clip-text">
+            </h2>
+            <h3 className="xl:text-[22px] text-[18px] lg:text-[17px] font-satoshi-Bold bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] inline-block text-transparent bg-clip-text">
               {item.Utility}
             </h3>
           </div>
