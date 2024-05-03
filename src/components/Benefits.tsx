@@ -15,7 +15,7 @@ const Benefits = () => {
 
   return (
     <div className="flex flex-col lg:flex-row justify-between w-full gap-10 font-satoshi-Bold">
-      <div id="creon-pass" className="lg:w-1/2 md:w-full w-full mt-20">
+      <div className="lg:w-1/2 md:w-full w-full mt-20">
         <h1 className="uppercase font-monument text-2xl sm:text-3xl md:text-4xl md:leading-[4rem] xxl:text-[68px] xxl:leading-[4.7rem] text-white">
           Creon Pass <br className="hidden lg:block" /> NFT
         </h1>

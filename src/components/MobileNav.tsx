@@ -12,7 +12,7 @@ const MobileNav = () => {
 
   const toggleMenu = () => {
     setMenu(!menu);
-    document.body.style.overflow = !menu ? 'hidden' : 'auto';
+    document.body.style.overflow = !menu ? "hidden" : "auto";
   };
 
   return (
@@ -38,55 +38,23 @@ const MobileNav = () => {
           </button>
         </div>
         <div className="bg-[#13171D] w-full h-[1px] mt-10 mb-[15px]" />
-        {navItems.map((item) => {
-          if (item.title === "Creon Pass") {
-            return (
-              <LinkScroll
-                key={item.title}
-                to={item.href}
-                smooth={true}
-                duration={500}
-                className="text-lg cursor-pointer"
-              >
-                <p
-                  className={`${
-                    item.isNew
-                      ? ""
-                      : "hover:text-[#3D8BFF] delay-75 transition-all"
-                  }`}
-                >
-                  {item.title}
-                  {item.isNew && (
-                    <span className="bg-black text-[#AB23FF] px-1 py-[2px] uppercase ml-1 rounded-full text-[10px] relative bottom-[6px]">
-                      Soon
-                    </span>
-                  )}
-                </p>
-                <div className="bg-[#13171D] w-full h-[1px] my-[15px]" />
-              </LinkScroll>
-            );
-          } else {
-            return (
-              <Link key={item.title} href={item.href} className="text-lg">
-                <p
-                  className={`${
-                    item.isNew
-                      ? ""
-                      : "hover:text-[#3D8BFF] delay-75 transition-all"
-                  }`}
-                >
-                  {item.title}
-                  {item.isNew && (
-                    <span className="bg-black text-[#AB23FF] px-1 py-[2px] uppercase ml-1 rounded-full text-[10px] relative bottom-2">
-                      Soon
-                    </span>
-                  )}
-                </p>
-                <div className="bg-[#13171D] w-full h-[1px] my-[15px]" />
-              </Link>
-            );
-          }
-        })}
+        {navItems.map((item) => (
+          <Link key={item.title} href={item.href} className="text-lg">
+            <p
+              className={`${
+                item.isNew ? "" : "hover:text-[#3D8BFF] delay-75 transition-all"
+              }`}
+            >
+              {item.title}
+              {item.isNew && (
+                <span className="bg-black text-[#AB23FF] px-1 py-[2px] uppercase ml-1 rounded-full text-[10px] relative bottom-2">
+                  Soon
+                </span>
+              )}
+            </p>
+            <div className="bg-[#13171D] w-full h-[1px] my-[15px]" />
+          </Link>
+        ))}
       </div>
     </div>
   );
