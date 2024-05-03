@@ -4,11 +4,11 @@ const Synergy = () => {
   const videoUrl = "https://yiegin.s3.eu-north-1.amazonaws.com/creon-logo.mp4";
   return (
     <div>
-      <div className="w-full flex flex-col gap-5">
-        <h1 className="uppercase font-monument text-base sm:text-2xl md:text-4xl md:leading-[4rem] xxl:text-[68px] xxl:leading-[4.7rem] text-white text-center">
+      <div className="w-full flex flex-col gap-1 md:gap-5">
+        <h1 className="uppercase font-monument sm:text-xl lg:text-3xl xl:text-4xl 2xl:text-[68px] xl:ml-16 2xl:ml-0 text-white">
           Profiting Through
         </h1>
-        <h1 className="ml-auto uppercase font-monument text-lg sm:text-2xl md:text-4xl text-center xl:mr-16 bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] inline-block text-transparent bg-clip-text">
+        <h1 className="ml-auto uppercase font-monument text-xs sm:text-[15px] md:text-xl xl:text-3xl xl:mr-16 2xl:mr-0 2xl:text-[38px] bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] inline-block text-transparent bg-clip-text">
           AI Innovation & Decentralization
         </h1>
       </div>

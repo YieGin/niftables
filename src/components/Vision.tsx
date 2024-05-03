@@ -30,26 +30,26 @@ const Vision = () => {
   };
 
   return (
-    <div className="flex font-satoshi-Bold w-full">
-      <div className="w-[60%]">
-        <p className="font-monument text-[38px] leading-[120%] uppercase">
-          Our vision is to <br /> support the innovation <br /> of AI blockchain <br /> projects{" "}
+    <div className="flex lg:flex-row flex-col gap-10 font-satoshi-Bold w-full">
+      <div className="lg:w-[60%]">
+        <h2 className="font-monument text-base md:text-[25px] lg:text-[38px] md:leading-[120%] uppercase">
+          Our vision is to <br className="lg:block hidden" /> support the innovation <br className="lg:block hidden" /> of AI blockchain <br className="lg:block hidden" /> projects{" "}
           <span className="bg-gradient-to-tr from-[#3D8BFF] from-0% to-[#AB23FF] to-100% text-transparent bg-clip-text">
-            while <br /> prioritizing communities <br /> and democratizing <br /> profits
+            while <br className="lg:block hidden" /> prioritizing communities <br className="lg:block hidden" /> and democratizing <br className="lg:block hidden" /> profits
           </span>
-        </p>
+        </h2>
         <Image
           src={ImageLog}
-          className="object-cover w-[45%] absolute mt-10 ml-20"
+          className="object-cover lg:w-[45%] lg:absolute mt-10 lg:ml-20"
           alt="Vision logo"
         />
       </div>
-      <div className="w-[40%] flex flex-col z-10 space-y-5">
+      <div className="lg:w-[40%] flex flex-col z-10 space-y-5">
         {VisionList.map((item, index) => (
           <div key={index}>
             <div
               onClick={() => handleIsActive(index)}
-              className={`flex gap-[30px] w-full cursor-pointer ${
+              className={`flex gap-2 lg:gap-[30px] w-full cursor-pointer ${
                 activeIndices.includes(index)
                   ? "text-white"
                   : "hover:text-[#3b86f6] delay-75 transition-all ease-linear"
@@ -58,7 +58,7 @@ const Vision = () => {
               <item.icon isActive={activeIndices.includes(index)} />
               <div className="flex flex-col w-full">
                 <div className="flex items-center my-6">
-                  <h2 className="text-[22px]">{renderTitle(item.title)}</h2>
+                  <h2 className="md:text-[22px]">{renderTitle(item.title)}</h2>
                   {activeIndices.includes(index) ? (
                     <IoIosArrowUp className="text-[22px] ml-auto transition-all" />
                   ) : (
@@ -72,7 +72,7 @@ const Vision = () => {
                       : "grid-rows-[0fr] opacity-0"
                   }`}
                 >
-                  <p className="overflow-hidden font-satoshi-Regular text-[18px] mr-10">
+                  <p className="overflow-hidden font-satoshi-Regular md:text-[18px] text-sm lg:mr-10">
                     {item.description}
                   </p>
                 </div>
