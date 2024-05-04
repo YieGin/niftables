@@ -13,7 +13,7 @@ const Synergy = () => {
         </h1>
       </div>
       <div className="flex justify-between xl:flex-row flex-col gap-10 mt-10 md:mt-[83px] h-full">
-        <div className="w-[67%] h-[485px] rounded-md relative">
+        <div className="xl:w-[67%] h-[485px] rounded-md relative">
           <div className="video-overlay-synergy" />
           <video
             autoPlay
