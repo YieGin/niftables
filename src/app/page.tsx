@@ -1,23 +1,26 @@
-import React from "react";
-import Hero from "@/components/Hero";
-import Benefits from "@/components/Benefits";
-import Synergy from "@/components/Synergy";
-import Vision from "@/components/Vision";
-import Launchpad from "@/components/Launchpad";
-import Innovation from "@/components/Innovation";
+import dynamic from "next/dynamic";
+import React, { Suspense } from "react";
+const Hero = dynamic(() => import("@/components/Hero"), { ssr: true });
+const Benefits = dynamic(() => import("@/components/Benefits"), { ssr: true });
+const Synergy = dynamic(() => import("@/components/Synergy"), { ssr: true });
+const Vision = dynamic(() => import("@/components/Vision"), { ssr: true });
+const Launchpad = dynamic(() => import("@/components/Launchpad"), { ssr: true });
+const Innovation = dynamic(() => import("@/components/Innovation"), { ssr: true });
 
 const Home = () => {
   return (
-    <div className="mb-20">
+    <>
       <Hero />
-      <div className="px-5 md:px-20 2xl:px-60 space-y-20 lg:space-y-40">
-        <Benefits />
-        <Synergy />
-        <Vision />
-        <Launchpad />
-        <Innovation />
+      <div className="flex flex-col gap-y-20 lg:gap-y-56 lg:mt-10">
+        <Suspense fallback={<div>Loading...</div>}>
+          <Benefits />
+          <Synergy />
+          <Vision />
+          <Launchpad />
+          <Innovation />
+        </Suspense>
       </div>
-    </div>
+    </>
   );
 };
 

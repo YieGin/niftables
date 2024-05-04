@@ -3,18 +3,17 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { VisionList } from "@/lib/constant";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { VisionImage } from "../../public";
 
 const Vision = () => {
   const [activeIndices, setActiveIndices] = useState<number[]>([0]);
 
   const handleIsActive = (index: number) => {
-    setActiveIndices(prevIndices => {
+    setActiveIndices((prevIndices) => {
       const currentIndex = prevIndices.indexOf(index);
       if (currentIndex === -1) {
         return [...prevIndices, index];
       } else {
-        return prevIndices.filter(i => i !== index);
+        return prevIndices.filter((i) => i !== index);
       }
     });
   };
@@ -30,17 +29,23 @@ const Vision = () => {
   };
 
   return (
-    <div className="flex lg:flex-row flex-col gap-10 font-satoshi-Bold w-full">
+    <div className="flex lg:flex-row flex-col gap-10 font-satoshi-Bold w-full px-5 md:px-20 2xl:px-60">
       <div className="lg:w-[60%]">
         <h2 className="font-monument text-base md:text-[25px] lg:text-[38px] md:leading-[120%] uppercase">
-          Our vision is to <br className="lg:block hidden" /> support the innovation <br className="lg:block hidden" /> of AI blockchain <br className="lg:block hidden" /> projects{" "}
-          <span className="bg-gradient-to-tr from-[#3D8BFF] from-0% to-[#AB23FF] to-100% text-transparent bg-clip-text">
-            while <br className="lg:block hidden" /> prioritizing communities <br className="lg:block hidden" /> and democratizing <br className="lg:block hidden" /> profits
+          Our vision is to <br className="lg:block hidden" /> support the
+          innovation <br className="lg:block hidden" /> of AI blockchain{" "}
+          <br className="lg:block hidden" /> projects{" "}
+          <span className="bg-gradient-to-tr from-[#3D8BFF] from-0% to-[#AB23FF] to-100% text-transparent bg-clip-text test">
+            while <br className="lg:block hidden" /> prioritizing communities{" "}
+            <br className="lg:block hidden" /> and democratizing{" "}
+            <br className="lg:block hidden" /> profits
           </span>
         </h2>
         <Image
-          src={VisionImage}
-          className="object-cover mt-10 lg:ml-20"
+          width={1000}
+          height={1000}
+          src="/images/VisionImage.webp"
+          className="object-cover mt-10 lg:ml-20 w-full"
           alt="Vision Image"
         />
       </div>
@@ -72,7 +77,7 @@ const Vision = () => {
                       : "grid-rows-[0fr] opacity-0"
                   }`}
                 >
-                  <p className="overflow-hidden font-satoshi-Regular md:text-[18px] text-sm lg:mr-10">
+                  <p className="overflow-hidden font-satoshi-Regular md:text-[18px] text-sm lg:mr-8">
                     {item.description}
                   </p>
                 </div>

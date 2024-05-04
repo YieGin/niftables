@@ -7,6 +7,7 @@ import {
   satoshiRegular,
 } from "@/utils/globalFonts";
 import Header from "@/components/Header";
+import FooterHandler from "@/components/FooterHandler";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,6 +26,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <FooterHandler />
       </body>
     </html>
   );
