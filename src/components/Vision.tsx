@@ -30,8 +30,8 @@ const Vision = () => {
 
   return (
     <div className="flex lg:flex-row flex-col gap-10 font-satoshi-Bold w-full px-5 md:px-20 2xl:px-60">
-      <div className="lg:w-[60%]">
-        <h2 className="font-monument text-base md:text-[25px] lg:text-[38px] md:leading-[120%] uppercase">
+      <div className="lg:w-[50%] xl:w-[60%]">
+        <h2 className="font-monument text-base md:text-[25px] lg:text-3xl xl:text-[38px] md:leading-[120%] uppercase">
           Our vision is to <br className="lg:block hidden" /> support the
           innovation <br className="lg:block hidden" /> of AI blockchain{" "}
           <br className="lg:block hidden" /> projects{" "}
@@ -49,7 +49,7 @@ const Vision = () => {
           alt="Vision Image"
         />
       </div>
-      <div className="lg:w-[40%] flex flex-col z-10 space-y-5">
+      <div className="xl:w-[40%] lg:w-[50%] flex flex-col z-10 space-y-5">
         {VisionList.map((item, index) => (
           <div key={index}>
             <div

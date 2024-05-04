@@ -1,20 +1,7 @@
 import React from "react";
-import { FaTwitter } from "react-icons/fa";
+import Link from "next/link";
+import { SocialLinks } from "@/lib/constant";
 import Image from "next/image";
-import { BsDiscord } from "react-icons/bs";
-import { BiLogoTelegram } from "react-icons/bi";
-
-const Icons = [
-  {
-    icon: BiLogoTelegram,
-  },
-  {
-    icon: BsDiscord,
-  },
-  {
-    icon: FaTwitter,
-  },
-];
 
 const Footer = () => {
   return (
@@ -24,25 +11,24 @@ const Footer = () => {
           © Creon 2023. All rights reserved.
         </p>
         <div className="flex gap-[10px]">
-          {Icons.map((item, index) => (
-            <div
-              key={index}
-              className="rounded-full border-2 border-white bg-black hover:bg-[#3d8bff] cursor-pointer delay-75 w-[34px] h-[34px] flex items-center justify-center"
-            >
-              <item.icon className="text-white text-[17px]" />
-            </div>
+          {SocialLinks.map((item, index) => (
+            <Link className="hover:bg-[#3d8bff] cursor-pointer delay-75 rounded-full" target="_blank" href={item.link} key={index}>
+            <Image
+              className="h-max"
+              alt="Logo"
+              src={item.icon}
+              width={34}
+              height={34}
+            />
+          </Link>
           ))}
         </div>
       </div>
-      <div className="flex gap-[6px] mt-5 items-center">
+      <div className="flex gap-[6px] mt-5 items-center group cursor-pointer">
         <p className="text-[16px]">Powered by</p>
-        <Image
-          width={100}
-          height={100}
-          className="w-[101px] mt-1"
-          src="/images/Frame.webp"
-          alt="Frame text"
-        />
+        <span className="font-satoshi-Bold text-[18px] tracking-wide group-hover:text-[#3D8BFF] delay-75 transition-all">
+          NIFTABLES
+        </span>
       </div>
     </footer>
   );

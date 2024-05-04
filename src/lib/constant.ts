@@ -2,6 +2,7 @@ import DecentralizedIcon from "@/components/icons/DecentralizedIcon";
 import GrowthIcon from "@/components/icons/GrowthIcon";
 import LaunchIcon from "@/components/icons/LaunchIcon";
 import LimitlessIcon from "@/components/icons/LimitlessIcon";
+import { Discord, Telegram, Twitter } from "../../public";
 
 export const VisionList = [
   {
@@ -64,3 +65,18 @@ export const InnovationList = [
     image: "/images/SynergyImage.webp",
   }
 ]
+
+export const SocialLinks = [
+  {
+    icon: Telegram,
+    link: "https://t.me/Niftables",
+  },
+  {
+    icon: Discord,
+    link: "https://twitter.com/niftables",
+  },
+  {
+    icon: Twitter,
+    link: "https://discord.com/invite/niftables",
+  },
+];

@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <div className="flex flex-col gap-y-20 lg:gap-y-56 lg:mt-10">
+      <div className="flex flex-col gap-y-20 xl:gap-y-56 lg:mt-10">
         <Suspense fallback={<div>Loading...</div>}>
           <Benefits />
           <Synergy />

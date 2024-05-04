@@ -15,7 +15,7 @@ export const navItems = [
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center sm:px-[45px] px-8 py-[30px] absolute w-full z-30">
+    <div className="flex justify-between items-center sm:px-[50px] px-8 py-[30px] absolute w-full z-30">
       <Link href={"/"}>
         <Image
           className="h-max"
@@ -26,9 +26,9 @@ const Header = () => {
         />
       </Link>
       <div className="hidden lg:flex justify-between font-satoshi-Bold">
-        <div className="flex items-center gap-x-10">
+        <div className="flex items-center gap-5 xl:gap-x-10">
           {navItems.map((item) => (
-            <Link key={item.title} href={item.href} className="text-lg">
+            <Link key={item.title} href={item.href} className="text-[18px]">
               <p
                 className={`${
                   item.isNew
@@ -45,7 +45,7 @@ const Header = () => {
               </p>
             </Link>
           ))}
-          <Button className="w-[132px] h-11 ml-5 hover:border-none">
+          <Button className="w-[132px] h-11 ml-5 hover:border-none text-[18px] font-satoshi-Regular">
             <span>Connect</span>
             <span>Connect</span>
           </Button>

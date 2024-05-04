@@ -13,8 +13,8 @@ const Benefits = () => {
   const videoUrl = "https://yiegin.s3.eu-north-1.amazonaws.com/nft-video.mp4";
 
   return (
-    <div className="pl-5 md:pl-20 2xl:pl-60 flex flex-col lg:flex-row justify-between w-full gap-10 font-satoshi-Bold">
-      <div className="lg:w-1/2 md:w-full w-full mt-[136px] pr-5">
+    <div className="pl-5 md:pl-20 2xl:pl-60 flex flex-col lg:flex-row justify-between w-full gap-10 font-satoshi-Bold mt-20">
+      <div className="lg:w-1/2 md:w-full w-full mt-10 pr-5">
         <h1 className="uppercase font-monument text-2xl sm:text-3xl md:text-4xl md:leading-[4rem] xxl:text-[68px] xxl:leading-[110%] text-white">
           Creon Pass <br className="hidden lg:block" /> NFT
         </h1>
@@ -23,7 +23,7 @@ const Benefits = () => {
           The Creon NFT pass unlocks access to AI projects, the Creon launchpad,
           and a ticket to generate passive income through AI-driven tools
         </p>
-        <div className="space-y-5 mt-10 font-satoshi-Regular">
+        <div className="space-y-3 mt-10 font-satoshi-Regular">
           {benefits.map((benefit, index) => (
             <div
               key={index}
@@ -42,8 +42,8 @@ const Benefits = () => {
       </div>
       <div className="md:w-full lg:w-1/2 relative md:right-0 h-full">
         <Image
-          width={800}
-          height={800}
+          width={1000}
+          height={1000}
           src="/images/DarkShape.webp"
           alt="Video Frame"
           className="absolute top-0 left-0 w-max h-full z-10"

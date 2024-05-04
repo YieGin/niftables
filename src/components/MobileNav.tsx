@@ -5,7 +5,8 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 import { navItems } from "./Header";
-import { Link as LinkScroll } from "react-scroll";
+import { SocialLinks } from "@/lib/constant";
+import Image from "next/image";
 
 const MobileNav = () => {
   const [menu, setMenu] = useState(false);
@@ -17,11 +18,16 @@ const MobileNav = () => {
 
   return (
     <div className="lg:hidden overflow-hidden font-satoshi-Bold">
+      <div
+        className={`absolute left-0 top-0 right-0 backdrop-blur-sm w-full h-screen z-50 ${
+          menu ? "block" : "hidden"
+        }`}
+      />
       <button onClick={toggleMenu} className="z-10" aria-label="Open menu">
         <RiMenu2Fill size={30} />
       </button>
       <div
-        className={`fixed top-0 right-0 sm:w-1/2 w-3/5 h-screen transition-transform duration-300 ${
+        className={`fixed top-0 right-0 sm:w-1/2 w-3/5 h-screen transition-transform duration-300 z-50 flex flex-col ${
           menu ? "translate-x-0" : "translate-x-full"
         } bg-black pl-5 py-5 z-20`}
       >
@@ -55,6 +61,24 @@ const MobileNav = () => {
             <div className="bg-[#13171D] w-full h-[1px] my-[15px]" />
           </Link>
         ))}
+        <div className="flex justify-center gap-5 mt-auto">
+          {SocialLinks.map((item, index) => (
+            <Link
+              target="_blank"
+              href={item.link}
+              key={index}
+              className="hover:bg-[#3d8bff] cursor-pointer delay-75 rounded-full"
+            >
+              <Image
+                className="h-max"
+                alt="Logo"
+                src={item.icon}
+                width={34}
+                height={34}
+              />
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

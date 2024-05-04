@@ -4,9 +4,9 @@
 
   const Launchpad = () => {
     return (
-      <div className="relative w-full h-max overflow-hidden pl-5 md:pl-20 2xl:px-[219px]">
-        <div className="grid w-full relative overflow-scroll xl:overflow-hidden hide-scrollbar">
-          <div className="flex gap-5 md:gap-10 font-satoshi-Bold py-10 mr-5 lg:mr-0">
+      <div className="relative w-full h-max overflow-hidden">
+        <div className="grid w-full relative overflow-scroll xl:overflow-hidden hide-scrollbar px-5 md:px-20 2xl:px-[219px]">
+          <div className="flex gap-5 md:gap-10 font-satoshi-Bold py-10">
             {CoreList.map((item, index) => (
               <div
                 key={index}
