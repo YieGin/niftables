@@ -27,9 +27,10 @@ const MobileNav = () => {
         <RiMenu2Fill size={30} />
       </button>
       <div
-        className={`fixed top-0 right-0 sm:w-1/2 w-3/5 h-screen transition-transform duration-300 z-50 flex flex-col ${
+        className={`fixed top-0 right-0 sm:w-1/2 w-3/5 h-full transition-transform duration-300 z-50 flex flex-col ${
           menu ? "translate-x-0" : "translate-x-full"
         } bg-black pl-5 py-5 z-20`}
+        style={{ overflowY: "auto" }}
       >
         <div className="flex justify-between gap-2 sm:gap-5 sm:pr-5 pr-3">
           <Button className="sm:w-32 sm:h-11 h-9 w-28 sm:text-[18px] text-[13px]">
