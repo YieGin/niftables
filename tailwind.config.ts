@@ -27,6 +27,7 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'video-overlay-hero': 'linear-gradient(174.64deg, #000000 4.29%, #3d8bff 47.39%, #ab23ff 95.05%)',
         'video-overlay': 'linear-gradient(174.64deg, rgba(61, 139, 255, 0.44) 4.29%, #ab23ff 95.71%)',
         'video-overlay-Innovation-video-bottom': 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)',
       },

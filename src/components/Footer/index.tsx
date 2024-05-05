@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="px-5 md:px-20 2xl:px-60 py-8 pb-10 flex md:justify-between items-center flex-col md:flex-row font-satoshi-Regular bg-opacity-5 z-10 relative">
+    <footer className="px-5 md:px-20 2xl:px-[219px] pb-9 flex md:justify-between items-center flex-col md:flex-row font-satoshi-Regular bg-opacity-5 z-10 relative">
       <div className="flex items-center flex-col md:flex-row gap-x-10 lg:gap-x-[90px]">
         <p className="md:text-[16px] text-[14px]">
           © Creon 2023. All rights reserved.

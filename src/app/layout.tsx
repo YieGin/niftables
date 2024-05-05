@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import {
   monument,
@@ -12,10 +11,10 @@ import FooterHandler from "@/components/Footer/FooterHandler";
 
 export const metadata = createMetadata({
   title: {
-    absolute: "Islam Belamri",
-    template: "Islam Belamri | %s",
+    absolute: "Frontend Developer Test",
+    template: "Niftables | %s",
   },
-  description: "This is my professional portfolio site.",
+  description: "Submission for the Frontend Developer position at Niftables.",
 });
 
 export default function RootLayout({
