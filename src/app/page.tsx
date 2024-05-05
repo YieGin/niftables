@@ -1,11 +1,12 @@
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
-const Hero = dynamic(() => import("@/components/Hero"), { ssr: true });
-const Benefits = dynamic(() => import("@/components/Benefits"), { ssr: true });
-const Synergy = dynamic(() => import("@/components/Synergy"), { ssr: true });
-const Vision = dynamic(() => import("@/components/Vision"), { ssr: true });
-const Launchpad = dynamic(() => import("@/components/Launchpad"), { ssr: true });
-const Innovation = dynamic(() => import("@/components/Innovation"), { ssr: true });
+
+const Hero = dynamic(() => import("@/components").then(mod => mod.Hero), { ssr: true });
+const Benefits = dynamic(() => import("@/components").then(mod => mod.Benefits), { ssr: true });
+const Synergy = dynamic(() => import("@/components").then(mod => mod.Synergy), { ssr: true });
+const Vision = dynamic(() => import("@/components").then(mod => mod.Vision), { ssr: true });
+const Launchpad = dynamic(() => import("@/components").then(mod => mod.Launchpad), { ssr: true });
+const Innovation = dynamic(() => import("@/components").then(mod => mod.Innovation), { ssr: true });
 
 const Home = () => {
   return (

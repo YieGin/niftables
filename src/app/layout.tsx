@@ -7,8 +7,8 @@ import {
   satoshiRegular,
 } from "@/utils/globalFonts";
 import Header from "@/components/Header";
-import FooterHandler from "@/components/FooterHandler";
 import { createMetadata } from "@/lib/metadata";
+import FooterHandler from "@/components/Footer/FooterHandler";
 
 export const metadata = createMetadata({
   title: {

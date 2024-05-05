@@ -3,8 +3,16 @@ import GrowthIcon from "@/components/icons/GrowthIcon";
 import LaunchIcon from "@/components/icons/LaunchIcon";
 import LimitlessIcon from "@/components/icons/LimitlessIcon";
 import { Discord, Telegram, Twitter } from "../../public";
+import { CoreType, InnovationType, NavItem, SocialType, VisionType } from "@/types";
 
-export const VisionList = [
+export const navItems: NavItem[] = [
+  { title: "Creon Pass", href: "", isNew: false },
+  { title: "Token", href: "/", isNew: true },
+  { title: "AI Revenue", href: "/", isNew: true },
+  { title: "AI Launchpad", href: "/", isNew: true },
+];
+
+export const VisionList: VisionType[] = [
   {
     icon: GrowthIcon,
     title: 'Profitability and <br /> Growth',
@@ -12,7 +20,7 @@ export const VisionList = [
   },
   {
     icon: DecentralizedIcon,
-    title: 'Transparent & Fair <br /> Decentralized Earnings',
+    title: 'Transparent & Fair Decentralized <br /> Earnings',
     description: 'At Creon, we handpick cutting-edge AI projects and offer our community and token holders early access and investment opportunities. Our community actively contributes to the growth and profitability of these projects, creating a dynamic ecosystem of innovation and shared success.'
   },
   {
@@ -27,7 +35,7 @@ export const VisionList = [
   },
 ];
 
-export const CoreList = [
+export const CoreList: CoreType[] = [
   {
     title: 'token',
     Utility: 'The Gateway token to the world of AI',
@@ -48,7 +56,7 @@ export const CoreList = [
   },
 ]
 
-export const InnovationList = [
+export const InnovationList: InnovationType[] = [
   {
     title: 'AI Prospects, Market Size, and Development Pace',
     description: 'The AI market is one of the most dynamically growing areas of technology. According to reports, the global AI market is expected to reach $190.61 billion by 2025, with a CAGR (Compound Annual Growth Rate) of 36.6%. The key drivers behind this growth include advancements in machine learning, increasing demand for big data analytics, and growing adoption of AI technology across various sectors such as healthcare, finance, and transportation.',
@@ -66,7 +74,7 @@ export const InnovationList = [
   }
 ]
 
-export const SocialLinks = [
+export const SocialLinks: SocialType[] = [
   {
     icon: Telegram,
     link: "https://t.me/Niftables",
@@ -79,4 +87,11 @@ export const SocialLinks = [
     icon: Twitter,
     link: "https://discord.com/invite/niftables",
   },
+];
+
+export const benefits = [
+  "Pre-launch investment opportunities for upcoming AI projects",
+  "Free and early access to Creon built AI projects",
+  "Higher allocation limits on the Creon AI Launchpad",
+  "Revenue share distribution from Creon built AI projects",
 ];

@@ -96,21 +96,6 @@ body {
   height: 100%;
 }
 
-.video-overlay-hero-bottom {
-  background: linear-gradient(
-    174.64deg,
-    #000000 4.29%,
-    #3d8bff 47.39%,
-    #ab23ff 95.05%
-  );
-  mix-blend-mode: soft-light;
-  transform: rotate(-180deg);
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 .creon-pass-linear {
   color: transparent;
   background: linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%);

@@ -1,17 +1,11 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { Logo } from "../../public";
-import Button from "./Button";
-import MobileNav from "./MobileNav";
 import Link from "next/link";
-
-export const navItems = [
-  { title: "Creon Pass", href: "", isNew: false },
-  { title: "Token", href: "/", isNew: true },
-  { title: "AI Revenue", href: "/", isNew: true },
-  { title: "AI Launchpad", href: "/", isNew: true },
-];
+import { navItems } from "@/lib/constant";
+import Button from "../Button";
+import { Logo } from "../../../public";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
@@ -28,21 +22,28 @@ const Header = () => {
       <div className="hidden lg:flex justify-between font-satoshi-Bold">
         <div className="flex items-center gap-5 xl:gap-x-10">
           {navItems.map((item) => (
-            <Link key={item.title} href={item.href} className="text-[18px]">
-              <p
-                className={`${
+            <Link
+              key={item.title}
+              href={item.href}
+            >
+              <div
+                className={`flex text-[18px] ${
                   item.isNew
                     ? ""
                     : "hover:text-[#3D8BFF] delay-75 transition-all"
                 }`}
               >
-                {item.title}
+                <p>{item.title}</p>
                 {item.isNew && (
-                  <span className="bg-[#000000] text-[#AB23FF] px-1 py-[2px] uppercase ml-1 rounded-full text-[10px] relative bottom-[6px]">
-                    Soon
-                  </span>
+                  <Image
+                    className="ml-1 w-[38px] h-[14px] mt-[2px]"
+                    width={38}
+                    height={14}
+                    src="/svgs/Frame_soon.svg"
+                    alt="Soon Frame"
+                  />
                 )}
-              </p>
+              </div>
             </Link>
           ))}
           <Button className="w-[132px] h-11 ml-5 hover:border-none text-[18px] font-satoshi-Regular">

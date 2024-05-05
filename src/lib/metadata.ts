@@ -18,7 +18,7 @@ export function createMetadata(override: Metadata): Metadata {
           url: "/banner.webp",
         },
       ],
-      siteName: "Portfolio",
+      siteName: "niftables",
       ...override.openGraph,
     },
     twitter: {

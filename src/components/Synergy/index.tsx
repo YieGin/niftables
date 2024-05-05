@@ -1,7 +1,9 @@
 import React from "react";
+import VideoSection from "./VideoSection";
 
 const Synergy = () => {
   const videoUrl = "https://yiegin.s3.eu-north-1.amazonaws.com/creon-logo.mp4";
+
   return (
     <div className="px-5 md:px-20 2xl:px-60">
       <div className="w-full flex flex-col">
@@ -13,20 +15,7 @@ const Synergy = () => {
         </h1>
       </div>
       <div className="flex justify-between xl:flex-row flex-col gap-10 mt-10 md:mt-[83px] h-full">
-        <div className="xl:w-[67%] h-[485px] rounded-md relative">
-          <div className="video-overlay-synergy" />
-          <video
-            autoPlay
-            loop
-            muted
-            preload="none"
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source src={videoUrl} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+        <VideoSection src={videoUrl} />
         <div className="xl:w-[32%] sm:px-[30px] px-5 border-x-[1px] border-[#13171D] flex flex-col justify-center py-10">
           <h1 className="font-satoshi-Bold text-[18px] sm:text-[22px]">
             The dynamic community driven business model of the future.
