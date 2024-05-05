@@ -16,8 +16,19 @@
   }
 }
 
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap; /* Ensures items stay in a single row */
+  overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+.launchpad-item {
+  min-width: 300px; /* Ensures items are wide enough to cause overflow */
+  flex-shrink: 0; /* Prevents items from shrinking */
 }
 
 .hide-scrollbar {

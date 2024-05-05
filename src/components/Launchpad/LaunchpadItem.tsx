@@ -8,7 +8,7 @@ interface LaunchpadItemProps {
 
 const LaunchpadItem: React.FC<LaunchpadItemProps> = ({ item }) => {
   return (
-    <article className="group rounded-lg py-[30px] h-full relative bg-[#13171D] bg-opacity-60 md:w-[400px] sm:w-[80vw] w-[80vw] xl:w-full">
+    <article className="group flex-shrink-0 rounded-lg py-[30px] h-full relative bg-[#13171D] bg-opacity-60 md:w-[400px] sm:w-[80vw] w-[80vw] xl:w-full">
       <header className="xl:px-[30px] px-5 mb-5 xl:mb-0 h-[100px] xl:h-[180px] xxl:h-[160px]">
         <div className="absolute -top-3 right-7 bg-white rounded-full px-[6px] py-[3px]">
           <p className="text-[12px] text-black uppercase">Coming soon</p>
@@ -20,7 +20,7 @@ const LaunchpadItem: React.FC<LaunchpadItemProps> = ({ item }) => {
           {item.Utility}
         </h3>
       </header>
-      <div className="overflow-hidden mr-8 rounded-r-lg">
+      <div className="overflow-hidden mr-8 rounded-r-lg z-40">
         <Image
           width={600}
           height={600}
