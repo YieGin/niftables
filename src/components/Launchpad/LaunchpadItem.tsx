@@ -16,7 +16,7 @@ const LaunchpadItem: React.FC<LaunchpadItemProps> = ({ item }) => {
         <h2 className="2xl:text-[38px] xl:text-[28px] text-[20px] font-monument uppercase mb-3">
           {item.title}
         </h2>
-        <h3 className="xl:text-[22px] font-satoshi-Bold leading-[130%] text-[18px] lg:text-[17px] creon-pass-linear">
+        <h3 className="xl:text-[22px] font-satoshi-Bold leading-[130%] text-[18px] lg:text-[17px] bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
           {item.Utility}
         </h3>
       </header>

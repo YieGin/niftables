@@ -7,10 +7,10 @@ const Synergy = () => {
   return (
     <div className="px-5 md:px-20 2xl:px-60">
       <div className="w-full flex flex-col">
-        <h1 className="uppercase font-monument sm:text-xl lg:text-3xl xl:text-4xl 2xl:text-[68px] xl:ml-16 2xl:ml-0 text-white">
+        <h1 className="uppercase font-monument sm:text-xl lg:text-4xl xl:text-4xl 2xl:text-[68px] xl:ml-16 2xl:ml-0 text-white">
           Profiting Through
         </h1>
-        <h1 className="ml-auto uppercase font-monument text-xs sm:text-[15px] md:text-xl xl:text-3xl xl:mr-16 2xl:mr-0 2xl:text-[38px] creon-pass-linear md:mt-10">
+        <h1 className="ml-auto uppercase font-monument text-xs sm:text-[15px] md:text-xl lg:text-3xl xl:text-3xl xl:mr-16 2xl:mr-0 2xl:text-[38px] bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary md:mt-3 lg:mt-10">
           AI Innovation & Decentralization
         </h1>
       </div>

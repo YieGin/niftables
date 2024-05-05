@@ -2,7 +2,7 @@ import { VideoPlayerProps } from "@/types";
 import Image from "next/image";
 
 const VideoSection = ({ src }: VideoPlayerProps) => (
-  <div className="md:w-full lg:w-1/2 relative md:right-0 h-full lg:mr-10">
+  <div className="md:w-full lg:w-1/2 relative md:right-0 h-full lg:mr-10 md:hidden xl:block">
     <Image
       width={1000}
       height={1000}
@@ -10,7 +10,7 @@ const VideoSection = ({ src }: VideoPlayerProps) => (
       alt="Video Frame"
       className="absolute top-0 left-0 w-max h-full z-10"
     />
-    <div className="video-overlay" />
+    <div className="absolute top-0 w-full h-full bg-video-overlay mix-blend-soft-light rotate-180" />
     <video
       autoPlay
       loop

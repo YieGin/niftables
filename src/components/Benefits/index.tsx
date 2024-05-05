@@ -7,13 +7,13 @@ const Benefits = () => {
   const videoUrl = "https://yiegin.s3.eu-north-1.amazonaws.com/nft-video.mp4";
 
   return (
-    <div className="px-5 md:px-20 xl:pr-0 2xl:pl-60 flex flex-col xl:flex-row justify-between w-full gap-10 font-satoshi-Bold mt-20">
+    <div className="px-5 md:px-20 xl:pr-0 2xl:pl-60 flex flex-col xl:flex-row justify-between w-full gap-10 font-satoshi-Bold xl:mt-20">
       <div className="xl:w-1/2 md:w-full w-full mt-10">
-        <h1 className="uppercase font-monument text-2xl sm:text-3xl md:text-4xl md:leading-[4rem] xxl:text-[68px] xxl:leading-[110%] text-white">
+        <h1 className="uppercase font-monument text-2xl sm:text-3xl md:text-4xl md:leading-[4rem] lg:text-[50px] xxl:text-[68px] xxl:leading-[110%] text-white">
           Creon Pass <br className="hidden xl:block" /> NFT
         </h1>
         <div className="bg-[#13171D] w-full h-[1px] my-[30px]" />
-        <p className="creon-pass-linear lg:w-[82%] md:text-[22px] font-satoshi-Bold leading-[130%]">
+        <p className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary lg:w-[82%] md:text-[22px] font-satoshi-Bold leading-[130%]">
           The Creon NFT pass unlocks access to AI projects, the Creon launchpad,
           and a ticket to generate passive income through AI-driven tools.
         </p>

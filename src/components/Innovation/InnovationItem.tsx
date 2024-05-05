@@ -16,9 +16,10 @@ const InnovationItem = ({ item }: InnovationItemProps) => (
       </p>
     </div>
     <div className="relative xl:w-[480px] w-full h-[250px] xl:h-full rounded-md z-20">
-      <div className="video-overlay-Innovation-video-bottom rounded-l-md rounded-r-md xl:rounded-r-none opacity-70" />
+    <div className="absolute top-0 w-full h-full bg-gradient-to-t from-[#3D8BFF] to-[#AB23FF] mix-blend-overlay z-10 rounded-r-md" />
       <Image
-        layout="fill"
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className="object-cover w-full h-full rounded-r-md rounded-l-md xl:rounded-l-none"
         src={item.image}
         alt={item.title}

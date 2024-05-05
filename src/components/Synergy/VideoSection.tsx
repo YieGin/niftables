@@ -2,7 +2,6 @@ import { VideoPlayerProps } from "@/types";
 
 const VideoSection = ({ src }: VideoPlayerProps) => (
   <div className="xl:w-[67%] h-[485px] rounded-md relative">
-    <div className="video-overlay-synergy" />
     <video
       autoPlay
       loop
@@ -15,6 +14,7 @@ const VideoSection = ({ src }: VideoPlayerProps) => (
       <track kind="captions" label="English" default />
       Your browser does not support the video tag.
     </video>
+    <div className="absolute top-0 w-full h-full bg-gradient-to-t from-[#3D8BFF] to-[#AB23FF] mix-blend-soft-light z-10" />
   </div>
 );
 

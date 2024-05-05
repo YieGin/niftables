@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from 'tailwindcss/colors';
 
 const config: Config = {
   content: [
@@ -7,6 +8,12 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      primary: '#3D8BFF',
+      secondary: '#AB23FF',
+      primaryText: '#fff',
+      ...colors,
+    },
     screens: {
       'xs': '320px',
       'sm': '400px',
@@ -20,6 +27,8 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'video-overlay': 'linear-gradient(174.64deg, rgba(61, 139, 255, 0.44) 4.29%, #ab23ff 95.71%)',
+        'video-overlay-Innovation-video-bottom': 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)',
       },
       fontFamily: {
         'satoshi-Bold': ['var(--font-satoshi-Bold)'],
