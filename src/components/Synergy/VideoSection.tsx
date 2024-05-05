@@ -8,7 +8,7 @@ const VideoSection = ({ src }: VideoPlayerProps) => (
       muted
       preload="none"
       playsInline
-      className="w-full h-full object-cover"
+      className="w-full h-full object-cover rounded-md"
     >
       <source src={src} type="video/mp4" />
       <track kind="captions" label="English" default />
